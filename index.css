@@ -1,0 +1,248 @@
+﻿* {
+	padding: 0;
+	margin: 0;
+}
+
+html, body, .slides {
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.slide {
+	height: 100%;
+	width: 100%;
+	background: url("images/bg.png") no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.slide .element {
+	top: 0;
+	left: 0;
+}
+
+.slide.before {
+	opacity: 0;
+	top: -50%;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.slide.after {
+	opacity: 1;
+}
+
+.slide.current {
+	opacity: 1;
+}
+
+.slide * {
+	position: relative;
+}
+
+/* BEGIN effect definition */
+.slide .hide {
+	opacity: 0;
+}
+
+.slide .show {
+	opacity: 1;
+}
+
+.slide .hide.anime-move-from-left {
+	opacity: 1;
+	left: -20em;
+}
+
+.slide .hide.anime-move-from-right {
+	opacity: 1;
+	left: 20em;
+}
+
+.slide .hide.anime-move-from-top {
+	opacity: 1;
+	top: -20em;
+}
+
+.slide .hide.anime-move-from-bottom {
+	opacity: 1;
+	top: 20em;
+}
+
+.slide .hide.anime-fadein-from-left {
+	left: -10em;
+}
+
+.slide .hide.anime-fadein-from-right {
+	left: 10em;
+}
+
+.slide .hide.anime-fadein-from-top {
+	top: -10em;
+}
+
+.slide .hide.anime-fadein-from-bottom {
+	top: 10em;
+}
+
+.slide .hide.anime-grow {
+	font-size: 1px;
+	opacity: 0;
+}
+
+.slide .hide.anime-shrink {
+	font-size: 120px;
+	opacity: 0;
+}
+
+.slide .hide.anime-rotatein {
+	font-size: 120px;
+	opacity: 0;
+	-webkit-transform: rotate(-270deg);
+	-moz-transform: rotate(-270deg);
+	-o-transform: rotate(-270deg);
+	transform: rotate(-270deg);
+}
+
+.anime {
+	-webkit-transition: all 1s ease-in-out 0s;
+	-moz-transition: all 1s ease-in-out 0s;
+	-o-transition: all 1s ease-in-out 0s;
+	transition: all 1s ease-in-out 0s;
+}
+
+/* END effect definition */
+
+.slide.index .title {
+	position: relative;
+	top: 44%;
+}
+
+.slide.index h1 {
+	font-size: 2.25em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.slide.index .subtitle {
+	position: relative;
+	top: 50%;
+}
+
+.slide.index h2 {
+	font-size: 1.25em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.slide .title {
+	position: relative;
+	top: 5%;
+}
+
+.slide .content {
+	position: relative;
+	top: 8%;
+	padding-left: 10%;
+	width: 80%;
+	padding-right: 10%;
+}
+
+.slide h1 {
+	font-size: 1.75em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.slide ul {
+	font-size: 1.25em;
+	list-style: disc outside;
+	line-height: 1.5em;
+}
+
+.slide ul li {
+	text-align: left;	
+}
+
+#pic1 {
+	position: absolute;
+	left: 16em;
+	top: 3em;
+	width: 5.1em;
+	height: 4.44em;
+}
+
+#pic2 {
+	position: absolute;
+	left: 5em;
+	top: 15em;
+	width: 6.33em;
+	height: 2.16em;
+}
+
+#pic3 {
+	position: absolute;
+	left: 6em;
+	top: 4em;
+	width: 9.00em;
+	height: 2.475em;
+}
+
+#pic4 {
+	position: absolute;
+	left: 3em;
+	top: 0em;
+	width: 9.00em;
+	height: 2.70em;
+}
+
+#pic5 {
+	position: absolute;
+	left: 20em;
+	top: 7em;
+	width: 9.00em;
+	height: 3.15em;
+}
+
+#pic6 {
+	position: absolute;
+	left: 6em;
+	top: 8em;
+	width: 6.51em;
+	height: 6.54em;
+}
+
+#pic7 {
+	position: absolute;
+	left: 25em;
+	top: -1em;
+	width: 4.8em;
+	height: 4.8em;
+}
+
+#pic8 {
+	position: absolute;
+	left: 13em;
+	top: 11em;
+	width: 10.24em;
+	height: 10.24em;
+}
+
+#pic1.hide ,#pic2.hide ,#pic3.hide ,#pic4.hide ,#pic5.hide ,#pic6.hide ,#pic7.hide ,#pic8.hide {
+	position: absolute;
+	left: 12em;
+	top: 9em;
+	-webkit-transform: rotate(-270deg);
+	-moz-transform: rotate(-270deg);
+	-o-transform: rotate(-270deg);
+	transform: rotate(-270deg);
+}
